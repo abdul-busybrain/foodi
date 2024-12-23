@@ -1,0 +1,306 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0 15.3rem;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #f4f4f4;
+  color: white;
+  padding: 6.5rem 0 3.8rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.fa-chevron-down {
+  color: hsl(126, 80%, 63%);
+  padding-left: 5px;
+}
+
+.header-items {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-btn {
+  background-color: hsl(126, 80%, 63%);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.cta-btn span {
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20rem;
+}
+
+.hero-text-cta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 8rem;
+}
+
+.hero-text p {
+  font-size: 2.6rem;
+  color: #4a4a4a;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text span {
+  color: hsl(126, 80%, 63%);
+}
+
+.hero-cta {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.hero-cta button {
+  outline: none;
+  background-color: hsl(126, 80%, 63%);
+  font-size: 2.6rem;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-cta a {
+  text-decoration: none;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.hero-cta span {
+  padding-right: 5px;
+}
+
+.categories-section {
+  text-align: center;
+  padding-bottom: 20rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ff6868;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+}
+
+.section-subtitle {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 3.8rem;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  width: 23rem;
+}
+
+.item div {
+  position: relative;
+}
+
+.item div::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 130px;
+  background-color: #c1f1c6;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.item img {
+  position: relative;
+  z-index: 1;
+  width: 10rem;
+  height: 10rem;
+}
+
+.item h3,
+.item p {
+  padding: 1rem 0;
+}
+
+.dish-title {
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+
+.item p {
+  color: #555555;
+  font-size: 2rem;
+  padding-bottom: 0;
+}
+
+.item h3 {
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+/* SECTION SPECIAL */
+.section-special {
+  padding-bottom: 20rem;
+}
+
+.special-text {
+  padding-bottom: 3.8rem;
+}
+
+.special-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.special-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42rem;
+  border: 2px solid transparent;
+  border-radius: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+}
+
+.special-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SECTION TESTIMONIAL */
+.section-testimonials {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.testimonial-content-para {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 37px;
+  color: #555555;
+  padding: 3rem 0;
+  padding-bottom: 5rem;
+}
+
+.best-chef {
+  width: 100%;
+}
+
+.review-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.customer-2 {
+  position: relative;
+  left: -3rem;
+}
+
+.customer-3 {
+  position: relative;
+  left: -6rem;
+}
+
+/* SECTION FOOTER */
+footer {
+  padding-bottom: 3.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.socials {
+  display: flex;
+}
