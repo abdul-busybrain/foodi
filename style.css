@@ -374,6 +374,8 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 footer p {
@@ -391,6 +393,12 @@ footer p {
   gap: 6rem;
 }
 
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
+}
+
 .footer-item {
   display: flex;
   flex-direction: column;
@@ -404,6 +412,237 @@ footer p {
 
 .socials i {
   color: #555555;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-copyright {
+  text-align: center;
+  width: 100%;
+}
+
+/* TABLET VIEW */
+@media (max-width: 64em) {
+  /* 1024px converted to em (assuming 16px base font size) */
+  html {
+    padding: 0 4rem;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+
+  .header-items {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  nav ul li a {
+    padding: 1.5rem;
+  }
+
+  .cta-btn {
+    padding: 0.75rem 1.5rem;
+  }
+
+  /* SECTION HERO */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15rem;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .hero-text p {
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .hero-cta button,
+  .hero-cta a {
+    font-size: 2.2rem;
+    padding: 1.2rem 2.5rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  /* SECTION CATEGORIES */
+  .categories {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .item {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .item img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .item p {
+    font-size: 1.8rem;
+  }
+
+  .dish-title {
+    font-size: 2.2rem;
+  }
+
+  /* SECTION SPECIAL */
+  .section-special {
+    padding-bottom: 15rem;
+  }
+
+  .special-items {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .special-item {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .special-item h3 {
+    font-size: 2.2rem;
+  }
+
+  .special-item p {
+    font-size: 1.8rem;
+  }
+
+  .special-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* SECTION TESTIMONIAL */
+  .section-testimonials {
+    grid-template-columns: 1fr;
+    padding-bottom: 15rem;
+  }
+
+  .paragraph {
+    font-size: 2.2rem;
+    padding: 2.5rem 0;
+    padding-bottom: 3.5rem;
+  }
+
+  .review-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .customer-2,
+  .customer-3 {
+    position: relative;
+    left: 0;
+  }
+
+  /* SECTION SERVICE */
+  .section-service {
+    grid-template-columns: 1fr;
+    padding-bottom: 15rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service {
+    width: 100%;
+    padding: 2.5rem;
+  }
+
+  .service-icon {
+    font-size: 5rem;
+  }
+
+  .service h3 {
+    font-size: 2.2rem;
+  }
+
+  .service p {
+    font-size: 1.8rem;
+  }
+
+  /* SECTION FOOTER */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 2.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-text {
+    gap: 2.5rem;
+  }
+
+  .footer-items {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-item {
+    gap: 1.5rem;
+  }
+
+  .socials {
+    gap: 1.5rem;
+  }
 }
 
 /* MOBILE VIEW */
@@ -585,7 +824,22 @@ footer p {
     padding-bottom: 2rem;
   }
 
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .footer-text {
+    gap: 2rem;
+  }
+
+  .footer-items {
+    flex-direction: column;
     gap: 2rem;
   }
 
