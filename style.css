@@ -647,6 +647,7 @@ footer p {
 
 /* MOBILE VIEW */
 @media (max-width: 48rem) {
+  /* 768px converted to em (assuming 16px base font size) */
   html {
     padding: 0 2rem;
   }
