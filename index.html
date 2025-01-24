@@ -69,7 +69,8 @@
           <div class="hero-cta">
             <a href="#"><button>Order now</button></a>
             <a href="#"
-              ><span>Watch video</span> <i class="fa-regular fa-circle-play"></i
+              ><span style="color: black">Watch video</span>
+              <i style="color: black" class="fa-regular fa-circle-play"></i
             ></a>
           </div>
         </div>
@@ -137,8 +138,15 @@
               />
             </div>
             <div class="special-item-text">
-              <h3 class="dish-title">Fattoush salad</h3>
-              <a href="#">
+              <h3 class="dish-title">Fattoush Salad</h3>
+              <a
+                href="#"
+                style="
+                  color: grey;
+                  display: flex;
+                  justify-content: space-between;
+                "
+              >
                 <span>View ingredients <i class="fa-regular fa-eye"></i></span>
               </a>
               <div class="special-info">
@@ -157,8 +165,10 @@
               />
             </div>
             <div class="special-item-text">
-              <h3 class="dish-title">Vegetable salad</h3>
-              <a href="#"> <p>View ingredients</p> </a>
+              <h3 class="dish-title">Vegetable Salad</h3>
+              <a href="#" style="color: grey">
+                <span>View ingredients <i class="fa-regular fa-eye"></i></span>
+              </a>
               <div class="special-info">
                 <span>₦ <strong>24</strong></span>
                 <span>⭐ <strong>4.9</strong></span>
@@ -175,8 +185,10 @@
               />
             </div>
             <div class="special-item-text">
-              <h3 class="dish-title">Egg vegi salad</h3>
-              <a href="#"> <p>View ingredients</p> </a>
+              <h3 class="dish-title">Egg Vegi Salad</h3>
+              <a href="#" style="color: grey">
+                <span>View ingredients <i class="fa-regular fa-eye"></i></span>
+              </a>
               <div class="special-info">
                 <span>₦ <strong>24</strong></span>
                 <span>⭐ <strong>4.9</strong></span>
@@ -275,21 +287,21 @@
         </div>
         <div class="footer-items">
           <div class="footer-item">
-            <h3>Useful links</h3>
+            <h3>Useful Links</h3>
             <a href="#"><p>About us</p></a>
             <a href="#"><p>Events</p></a>
             <a href="#"><p>Blogs</p></a>
             <a href="#"><p>FAQ</p></a>
           </div>
           <div class="footer-item">
-            <h3>Main menu</h3>
+            <h3>Main Menu</h3>
             <a href="#"><p>Home</p></a>
             <a href="#"><p>Offers</p></a>
             <a href="#"><p>Menus</p></a>
             <a href="#"><p>Reservation</p></a>
           </div>
           <div class="footer-item">
-            <h3>Contact us</h3>
+            <h3>Contact Us</h3>
             <a href="#"><p>example@email.com</p></a>
             <a href="#"><p>+234-801-2345-678</p></a>
             <div class="socials">
@@ -303,8 +315,16 @@
       </div>
 
       <div class="footer-copyright">
-        <p>Copyright &copy; 2025 Abdullahi.Busybrain | All rights reserved.</p>
+        <p>
+          Copyright &copy; <span id="current-year"></span> Abdullahi.Busybrain |
+          All rights reserved.
+        </p>
       </div>
     </footer>
+
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
